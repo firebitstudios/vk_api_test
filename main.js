@@ -1,6 +1,5 @@
 VK.init(function() {
     alert("АВТОРИЗАЦИЯ УСПЕШНА")
   }, function() {
-     // API initialization failed
-     // Can reload page here
+     alert("ХУЙ")
 }, '5.103');
