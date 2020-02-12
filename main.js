@@ -1,5 +1,5 @@
 VK.init(function() {
-    window.location="https://oauth.vk.com/authorize?client_id=7318276&redirect_uri=https://vk.com/app7318276";
+    alert("АВТОРИЗАЦИЯ УСПЕШНА")
   }, function() {
      // API initialization failed
      // Can reload page here
