@@ -1,4 +1,4 @@
-let VKID;
+var VKID = '';
 
 VK.init(function() {
     document.write("SUCCESS! ");
@@ -11,5 +11,6 @@ function init(){
     VK.api("users.get", {"fields":"first_name", "v":"5.103"}, function (data){
         VKID = data.response[0].first_name;
         document.write(VKID);
+        console.log("ID GOT")
     });
 }
