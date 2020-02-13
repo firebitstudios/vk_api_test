@@ -1,4 +1,4 @@
-var VKID = '';
+var VKID = '412423';
 
 VK.init({
     VK.init(function() {
