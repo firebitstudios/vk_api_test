@@ -9,8 +9,8 @@ VK.init(function() {
 }, '5.103'); 
 function init(){
     VK.api("users.get", {"v":"5.103"}, function (data){
-        VKID = data.response.id;
-        document.write(VKID);
+        IDOFUSER = data.response.id;
+        document.write(IDOFUSER);
         console.log("ID GOT");
         document.write("UFHWUHFIWUHFIU")
     });
