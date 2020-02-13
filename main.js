@@ -1,6 +1,6 @@
 VK.init(function() {
     document.write("SUCCESS\n");
-    document.write("YOUR ID IS: " + VK.id);
+    document.write("YOUR ID IS: " + VK.user_id);
   }, function() {
      document.write("FAILED");
 }, '5.103');
