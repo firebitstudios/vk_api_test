@@ -1,4 +1,4 @@
-var VKID = '';
+var IDOFUSER = 0;
 
 VK.init(function() {
     document.write("SUCCESS! ");
@@ -8,9 +8,10 @@ VK.init(function() {
      // Can reload page here
 }, '5.103'); 
 function init(){
-    VK.api("users.get", {"fields":"first_name", "v":"5.103"}, function (data){
-        VKID = data.response[0].first_name;
+    VK.api("users.get", {"v":"5.103"}, function (data){
+        VKID = data.response[0].id;
         document.write(VKID);
-        console.log("ID GOT")
+        console.log("ID GOT");
+        document.write("UFHWUHFIWUHFIU")
     });
 }
