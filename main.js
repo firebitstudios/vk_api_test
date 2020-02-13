@@ -1,9 +1,8 @@
 let VKID;
 
-VK.init({
-    VK.init(function() {
-     document.write("SUCCESS! ");
-     init();
+VK.init(function() {
+    document.write("SUCCESS! ");
+    init();
   }, function() {
      // API initialization failed
      // Can reload page here
