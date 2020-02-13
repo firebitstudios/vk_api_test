@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <head>
-    <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
-    <script src="main.js"></script>
+    <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+
+<div id="login_button" onclick="VK.Auth.login(authInfo);"></div>
+
+<script language="javascript">
+    VK.init({
+        apiId: 7318276
+    });
+    function authInfo(response) {
+        if (response.session) {
+            console.log('user: '+response.session.mid);
+        } else {
+            console.log('not auth');
+        }
+    }
+    VK.Auth.getLoginStatus(authInfo);
+    VK.UI.button('login_button');
+</script>
 </head>
