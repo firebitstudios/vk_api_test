@@ -6,7 +6,7 @@
 <body>
     <script type="text/javascript">
         var script = document.createElement('SCRIPT');
-        script.src = "https://api.vk.com/method/users.get?user_ids=owner_id&fields=first_name&v=5.103.&access_token=5f39563a5f39563a5f39563a635f56fd3e55f395f39563a017d422e52bb78e8e30f6ef4&callback=callbackFunc";
+        script.src = "https://api.vk.com/method/users.get?user_ids="+viewer_id+"&fields=first_name&v=5.103.&access_token=5f39563a5f39563a5f39563a635f56fd3e55f395f39563a017d422e52bb78e8e30f6ef4&callback=callbackFunc";
         document.getElementsByTagName("head")[0].appendChild(script);
         function callbackFunc(result){
             console.log(result);    
