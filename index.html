@@ -6,7 +6,7 @@
 <body>
     <script type="text/javascript">
   VK.init(function() {
-     console.log(VK.id);
+     console.log(VK.viewer_id);
      // Your code here
   }, function() {
      // API initialization failed
@@ -14,12 +14,9 @@
 }, '5.103');
 </script>
     <script type="text/javascript">
-        var script = document.createElement('SCRIPT');
-        script.src = "https://api.vk.com/method/users.get?user_ids="+VK.id+"&fields=first_name&v=5.103.&access_token=5f39563a5f39563a5f39563a635f56fd3e55f395f39563a017d422e52bb78e8e30f6ef4&callback=callbackFunc";
-        document.getElementsByTagName("head")[0].appendChild(script);
-        function callbackFunc(result){
-            console.log(result);    
-        }
+        VK.api("users.get", {"fields"}: "photo_50,first_name,last_name", "v":"5.73"}, function (data){
+            console.log(data);   
+        })
     </script>
 </body>
 </html>
