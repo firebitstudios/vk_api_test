@@ -9,7 +9,7 @@ VK.init(function() {
 }, '5.103'); 
 function init(){
     VK.api("users.get", {"fields":"id","v":"5.103"}, function (data){
-        IDOFUSER = data;
+        IDOFUSER = data.response;
         console.log("ID GOT");
         console.log(IDOFUSER);
     });
