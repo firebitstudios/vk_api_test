@@ -1,4 +1,4 @@
-var VKID = '412423';
+let VKID;
 
 VK.init({
     VK.init(function() {
