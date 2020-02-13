@@ -1,4 +1,4 @@
-var IDOFUSER = 0;
+var IDOFUSER;
 
 VK.init(function() {
     document.write("SUCCESS! ");
