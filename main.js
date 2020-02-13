@@ -1,6 +1,16 @@
-VK.init(function() {
-    document.write("SUCCESS\n");
-    document.write("YOUR ID IS: " + userid.session.mid);
+var VKID = '';
+
+VK.init({
+    VK.init(function() {
+     document.write("SUCCESS! ");
+     init();
   }, function() {
-     document.write("FAILED");
-}, '5.103');
+     // API initialization failed
+     // Can reload page here
+}, '5.103'); 
+function init(){
+    VK.api("users.get", {"v":"5.103"}, function (data){
+        VKID = data.response[0].id;
+        document.write(VKID);
+    });
+}
